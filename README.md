@@ -7,16 +7,26 @@ This project demonstrates the design and implementation of a highly available an
   <img src="Architecture Load.png" width="700">
 </p>
 
-Requirements:
-•	Create a custom VPC
-•	Create 2 public subnets in different Availability Zones
-•	Launch Linux EC2 instances
-•	Create Target Group
-•	Create Application Load Balancer
-•	Create Launch Template / Launch Configuration
-•	Create Auto Scaling Group
+## 📋 Requirements
+- Create a custom VPC  
+- Create 2 public subnets in different Availability Zones  
+- Launch Linux EC2 instances  
+- Create Target Group  
+- Create Application Load Balancer  
+- Create Launch Template / Launch Configuration  
+- Create Auto Scaling Group  
 
+---
 
-VPC
-	Open AWS Console → Navigate to VPC → Create VPC → Select VPC only 
-→ Name: project-vpc → IPv4 CIDR block: 10.0.0.0/16 → Create VPC
+## 🌐 VPC
+
+➢ Open AWS Console → Navigate to **VPC** → Create VPC → Select **VPC only**  
+→ Name: `project-vpc`  
+→ IPv4 CIDR block: `10.0.0.0/16`  
+→ Create VPC  
+
+➢ Navigate to **Internet Gateways** → Create Internet Gateway  
+→ Name: `project-igw`  
+→ Attach Internet Gateway to `project-vpc`
+
+---

@@ -213,6 +213,7 @@ echo "<h1>Server from $(hostname)</h1>" > /var/www/html/index.html
 ```bash
 sudo yum install -y stress
 stress --cpu 2 --timeout 300
+```
 
 <p align="center">
   <img src="Outputs/Testing.png" width="700">
